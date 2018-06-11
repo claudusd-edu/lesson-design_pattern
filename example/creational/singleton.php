@@ -1,6 +1,6 @@
 <?php
 
-class Founder {
+class President {
 
   private static $instance;
 
@@ -19,7 +19,7 @@ class Founder {
   }
 }
 
-$founder1 = Founder::getInstance();
-$founder2 = Founder::getInstance();
+$founder1 = President::getInstance();
+$founder2 = President::getInstance();
 
 $founder1 === $founder2;

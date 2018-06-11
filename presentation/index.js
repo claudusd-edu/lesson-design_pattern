@@ -84,7 +84,15 @@ export default class Presentation extends React.Component {
           bgColor="primary"
           code={require("raw-loader!../example/creational/simple-factory.php")}
           ranges={[
-            { loc: [2,3], title: "Class" },
+            { loc: [2,3], title: "Interface" },
+            { loc: [7,8], title: "Class" },
+            { loc: [13,18], title: "Class constructor" },
+            { loc: [19,23], title: "class getter" },
+            { loc: [24,28], title: "class getter" },
+            { loc: [30,31], title: "class Simple Factory" },
+            { loc: [32,37], title: "class Simple Factory" },
+            { loc: [38,39], title: "Run it" },
+            { loc: [40,42], title: "Run it" },
           ]}/>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={3} fit caps lineHeight={1} textColor="secondary">
@@ -97,7 +105,22 @@ export default class Presentation extends React.Component {
           bgColor="primary"
           code={require("raw-loader!../example/creational/factory-method.php")}
           ranges={[
-            { loc: [2,3], title: "Class" },
+            { loc: [2,3], title: "Interface" },
+            { loc: [4,5], title: "Interface" },
+            { loc: [7,8], title: "Implment 1" },
+            { loc: [9,13], title: "Implment 1" },
+            { loc: [15,16], title: "Implment 2" },
+            { loc: [17,21], title: "Implment 2" },
+            { loc: [23,24], title: "Factory Method" },
+            { loc: [23,24], title: "Factory Method" },
+            { loc: [25,26], title: "Factory Method" },
+            { loc: [27,32], title: "Factory Method" },
+            { loc: [34,35], title: "Concrete Factory 1" },
+            { loc: [36,40], title: "Concrete Factory 1" },
+            { loc: [43,44], title: "Concrete Factory 2" },
+            { loc: [45,49], title: "Concrete Factory 2" },
+            { loc: [51,53], title: "Run it" },
+            { loc: [54,56], title: "Run it" },
           ]}/>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={3} fit caps lineHeight={1} textColor="secondary">
@@ -110,7 +133,21 @@ export default class Presentation extends React.Component {
           bgColor="primary"
           code={require("raw-loader!../example/creational/abstract-factory.php")}
           ranges={[
-            { loc: [2,3], title: "Class" },
+            { loc: [2,3], title: "Interface 1" },
+            { loc: [7,11], title: "Implement Product 1" },
+            { loc: [12,16], title: "Implement Product 2" },
+            { loc: [17,18], title: "Interface 2" },
+            { loc: [22,26], title: "Implement Employee 1" },
+            { loc: [27,31], title: "Implement Employee 2" },
+            { loc: [33,39], title: "Abstract Factory" },
+            { loc: [41,42], title: "Concrete Factory 1" },
+            { loc: [43,47], title: "Concrete Factory 1" },
+            { loc: [48,52], title: "Concrete Factory 1" },
+            { loc: [54,55], title: "Concrete Factory 2" },
+            { loc: [56,60], title: "Concrete Factory 2" },
+            { loc: [61,65], title: "Concrete Factory 2" },
+            { loc: [67,70], title: "Run it" },
+            { loc: [72,75], title: "Run it" },
           ]}/>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={3} fit caps lineHeight={1} textColor="secondary">
@@ -123,7 +160,19 @@ export default class Presentation extends React.Component {
           bgColor="primary"
           code={require("raw-loader!../example/creational/builder.php")}
           ranges={[
-            { loc: [2,3], title: "Class" },
+            { loc: [2,3], title: "Product" },
+            { loc: [4,11], title: "Product" },
+            { loc: [12,18], title: "Product" },
+            { loc: [17,23], title: "Product" },
+            { loc: [25,26], title: "Builder" },
+            { loc: [27,31], title: "Builder" },
+            { loc: [32,37], title: "Builder" },
+            { loc: [38,43], title: "Builder" },
+            { loc: [44,48], title: "Builder" },
+            { loc: [50,55], title: "Builder" },
+            { loc: [56,64], title: "Builder" },
+            { loc: [67,68], title: "Run it" },
+            { loc: [68,69], title: "Run it" },
           ]}/>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={3} fit caps lineHeight={1} textColor="secondary">
@@ -136,7 +185,19 @@ export default class Presentation extends React.Component {
           bgColor="primary"
           code={require("raw-loader!../example/creational/prototype.php")}
           ranges={[
-            { loc: [2,3], title: "Class" },
+            { loc: [2,6], title: "Prototype" },
+            { loc: [7, 8], title: "Concreate Prototype" },
+            { loc: [11, 15], title: "constructor" },
+            { loc: [16, 20], title: "Getter" },
+            { loc: [21, 25], title: "Setter" },
+            { loc: [26, 30], title: "Implemented method" },
+            { loc: [32, 33], title: "Run it" },
+            { loc: [33, 34], title: "Run it" },
+            { loc: [34, 35], title: "Run it" },
+            { loc: [35, 36], title: "Run it" },
+            { loc: [36, 37], title: "Run it" },
+            { loc: [37, 38], title: "Run it" },
+            { loc: [38, 39], title: "Run it" },
           ]}/>
           <Slide transition={["fade"]} bgColor="primary">
             <Heading size={2} fit caps lineHeight={1} textColor="secondary">
