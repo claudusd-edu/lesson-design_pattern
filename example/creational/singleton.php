@@ -9,7 +9,7 @@ class President {
 
   }
 
-  public static function getInstance(): Founder
+  public static function getInstance(): President
   {
     if (!self::$instance) {
       self::$instance = new self();
@@ -19,7 +19,7 @@ class President {
   }
 }
 
-$founder1 = President::getInstance();
-$founder2 = President::getInstance();
+$president1 = President::getInstance();
+$president2 = President::getInstance();
 
-$founder1 === $founder2;
+$president1 === $president2;

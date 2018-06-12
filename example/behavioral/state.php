@@ -46,7 +46,7 @@ class WarmUp implements State
   {
     echo "Serve the warm-up order"
     if ($this->count-- == 0) {
-      $this->setState(new Close());
+      $context->setState(new Close());
     }
   }
 }
@@ -64,7 +64,7 @@ class Ready implements State
   {
     echo "Serve the order"
     if ($this->count-- == 0) {
-      $this->setState(new WarmUp());
+      $context->setState(new WarmUp());
     }
   }
 }
