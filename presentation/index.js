@@ -612,6 +612,33 @@ export default class Presentation extends React.Component {
             Facade
           </Heading>
         </Slide>
+        <CodeSlide
+          transition={["fade"]}
+          lang="php"
+          bgColor="primary"
+          code={require("raw-loader!../example/structural/facade.php")}
+          ranges={[
+            { loc: [2,3] },
+            { loc: [4,8] },
+            { loc: [9,13] },
+            { loc: [14,18] },
+            { loc: [19,23] },
+            { loc: [24,28] },
+            { loc: [29,33] },
+            { loc: [34,38] },
+            { loc: [43,46] },
+            { loc: [69,70], title: "Facade" },
+            { loc: [77,82], title: "Facade" },
+            { loc: [82,87], title: "Facade" },
+            { loc: [71,76], title: "Facade" },
+            { loc: [88,91], title: "Facade" },
+            { loc: [91,92], title: "Facade" },
+            { loc: [92,93], title: "Facade" },
+            { loc: [93,94], title: "Facade" },
+            { loc: [94,96], title: "Facade" },
+            { loc: [96,99], title: "Facade" },
+            { loc: [102,104], title: "Run it" },
+          ]}/>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={2} fit caps lineHeight={1} textColor="secondary">
             Flyweight
