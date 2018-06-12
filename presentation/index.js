@@ -673,6 +673,28 @@ export default class Presentation extends React.Component {
             Proxy
           </Heading>
         </Slide>
+        <CodeSlide
+          transition={["fade"]}
+          lang="php"
+          bgColor="primary"
+          code={require("raw-loader!../example/structural/proxy.php")}
+          ranges={[
+            { loc: [2,10] },
+            { loc: [11,12] },
+            { loc: [19,25] },
+            { loc: [13,18] },
+            { loc: [26,30] },
+            { loc: [31,35] },
+            { loc: [36,40] },
+            { loc: [42,43], title: "Proxy" },
+            { loc: [48,52], title: "Proxy" },
+            { loc: [44,45], title: "Proxy" },
+            { loc: [46,47], title: "Proxy" },
+            { loc: [53,57], title: "Proxy" },
+            { loc: [58,65], title: "Proxy" },
+            { loc: [66,71], title: "Proxy" },
+            { loc: [72,77], title: "Proxy" },
+          ]}/>
       </Deck>
     );
   }
