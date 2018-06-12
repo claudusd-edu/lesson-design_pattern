@@ -509,6 +509,29 @@ export default class Presentation extends React.Component {
             Adapter
           </Heading>
         </Slide>
+        <CodeSlide
+          transition={["fade"]}
+          lang="php"
+          bgColor="primary"
+          code={require("raw-loader!../example/structural/adapter.php")}
+          ranges={[
+            { loc: [2,6], title: "Target" },
+            { loc: [7,8], title: "Concreate Target" },
+            { loc: [9,14], title: "Concreate Target" },
+            { loc: [16,17], title: "Client" },
+            { loc: [18,22], title: "Client" },
+            { loc: [18,22], title: "Client" },
+            { loc: [24,25], title: "Run it" },
+            { loc: [26,27], title: "Run it" },
+            { loc: [28,29], title: "Run it" },
+            { loc: [30,31] },
+            { loc: [32,36] },
+            { loc: [41,43], title: "Run it" },
+            { loc: [56,57], title: "Adapter" },
+            { loc: [58,64], title: "Adapter" },
+            { loc: [65,70], title: "Adapter" },
+            { loc: [75,77], title: "Run it" },
+          ]}/>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={2} fit caps lineHeight={1} textColor="secondary">
             Bridge
