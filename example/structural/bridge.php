@@ -55,7 +55,22 @@ class IndexLight extends WebPage
 
 
 
-//Or
+//What to Change ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -83,14 +98,12 @@ class LightTheme implements Theme
 
 abstract WebPageWithTheme implements Webpage
 {
-  private $theme;
+  protected $theme;
 
   public function __construct(Theme $theme)
   {
       $this->theme = $theme;
   }
-
-  abstract public function getContent(): string
 }
 
 class About extends WebPageWithTheme

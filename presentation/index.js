@@ -537,6 +537,28 @@ export default class Presentation extends React.Component {
             Bridge
           </Heading>
         </Slide>
+        <CodeSlide
+          transition={["fade"]}
+          lang="php"
+          bgColor="primary"
+          code={require("raw-loader!../example/structural/bridge.php")}
+          ranges={[
+            { loc: [2,6], title: "WebPage" },
+            { loc: [7,14], title: "About Page" },
+            { loc: [15,22], title: "About Dark" },
+            { loc: [23,30], title: "About Light" },
+            { loc: [31,38], title: "Index Page" },
+            { loc: [39,46], title: "Index Dark" },
+            { loc: [47,54], title: "Index Light" },
+            { loc: [57,58]},
+            { loc: [76,80], title: "Theme"},
+            { loc: [81,88], title: "Dark Theme"},
+            { loc: [89,96], title: "Light Theme"},
+            { loc: [98,99], title: "Web page with theme"},
+            { loc: [100,107], title: "Web page with theme"},
+            { loc: [108,114], title: "Web page with theme"},
+            { loc: [116,123], title: "Web page with theme"},
+          ]}/>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={2} fit caps lineHeight={1} textColor="secondary">
             Composite
