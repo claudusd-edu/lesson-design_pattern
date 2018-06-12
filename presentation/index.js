@@ -564,11 +564,49 @@ export default class Presentation extends React.Component {
             Composite
           </Heading>
         </Slide>
+        <CodeSlide
+          transition={["fade"]}
+          lang="php"
+          bgColor="primary"
+          code={require("raw-loader!../example/structural/composite.php")}
+          ranges={[
+            { loc: [2,6], title: "Employee" },
+            { loc: [7,14], title: "Chef" },
+            { loc: [15, 22], title: "Waiter" },
+            { loc: [15, 22], title: "Waiter" },
+            { loc: [23, 24], title: "Composite" },
+            { loc: [25, 31], title: "Composite" },
+            { loc: [32, 40], title: "Composite" },
+            { loc: [32, 40], title: "Run it" },
+            { loc: [42, 46], title: "Run it" },
+            { loc: [47, 48], title: "Run it" },
+          ]}/>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={2} fit caps lineHeight={1} textColor="secondary">
             Decorator
           </Heading>
         </Slide>
+        <CodeSlide
+          transition={["fade"]}
+          lang="php"
+          bgColor="primary"
+          code={require("raw-loader!../example/structural/decorator.php")}
+          ranges={[
+            { loc: [2,8] },
+            { loc: [9,10] },
+            { loc: [11,20] },
+            { loc: [22,23], title: "Decorator" },
+            { loc: [24,30], title: "Decorator" },
+            { loc: [31,35], title: "Decorate Method" },
+            { loc: [36,40], title: "Decorate Method" },
+            { loc: [42,43], title: "Decorator" },
+            { loc: [44,50], title: "Decorator" },
+            { loc: [51,55], title: "Decorate Method" },
+            { loc: [56,60], title: "Decorate Method" },
+            { loc: [63,66], title: "Run it" },
+            { loc: [67,70], title: "Run it" },
+            { loc: [71,74], title: "Run it" },
+          ]}/>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={2} fit caps lineHeight={1} textColor="secondary">
             Facade
