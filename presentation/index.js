@@ -644,6 +644,30 @@ export default class Presentation extends React.Component {
             Flyweight
           </Heading>
         </Slide>
+        <CodeSlide
+          transition={["fade"]}
+          lang="php"
+          bgColor="primary"
+          code={require("raw-loader!../example/structural/flyweight.php")}
+          ranges={[
+            { loc: [2,3] },
+            { loc: [10,15] },
+            { loc: [4,9] },
+            { loc: [4,9] },
+            { loc: [16,20] },
+            { loc: [21,25] },
+            { loc: [48,49] },
+            { loc: [54,59] },
+            { loc: [50,53] },
+            { loc: [60,64] },
+            { loc: [66,73] },
+            { loc: [28,29], title: "Flyweight" },
+            { loc: [30,36], title: "Flyweight" },
+            { loc: [37,45], title: "Flyweight" },
+            { loc: [37,45], title: "Singleton ?" },
+            { loc: [75,79], title: "Run it" },
+            { loc: [80,84], title: "Run it" },
+          ]}/>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={2} fit caps lineHeight={1} textColor="secondary">
             Proxy
