@@ -37,7 +37,7 @@ class CoffeeMaker
 
   public function make($origin): Coffee
   {
-    if (isset($this->preparedCoffee[$origin])){
+    if (!isset($this->preparedCoffee[$origin])){
       $this->preparedCoffee[$origin] = new Coffee($origin);
     }
     return $this->preparedCoffee[$origin];

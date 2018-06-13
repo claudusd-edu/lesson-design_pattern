@@ -2,14 +2,14 @@
 
 interface Employee
 {
-  public function prepare();
+  public function prepare(): Order;
 }
 
 class SandwichMaker implements Employee
 {
   public function prepare()
   {
-    echo "Prepare a sandwich";
+    return new Order();
   }
 }
 
@@ -17,22 +17,22 @@ class Barista implements Employee
 {
   public function prepare()
   {
-    echo "Prepare a coffee";
+    return new Order();
   }
 }
 
-abstract class Producer
+abstract class OrderFactory
 {
     abstract protected function makeEmployee(): Employee;
 
-    public function takeOrder()
+    final public function takeOrder(): Order
     {
       $employee = $this->makeEmployee();
-      $employee->prepare();
+      return $employee->prepare();
     }
 }
 
-class SandwichProducer extends Producer
+class SandwichProducer extends OrderFactory
 {
   protected function makeEmployee()
   {
@@ -41,7 +41,7 @@ class SandwichProducer extends Producer
 }
 
 
-class CoffeeProducer extends Producer
+class CoffeeProducer extends OrderFactory
 {
   protected function makeEmployee()
   {

@@ -13,7 +13,7 @@ abstract class About extends WebPage
   }
 }
 
-class AboutDark extends WebPage
+class AboutDark extends About
 {
   public function getContent(): string
   {
@@ -37,7 +37,7 @@ abstract class Index extends WebPage
   }
 }
 
-abstract class IndexDark extends WebPage
+abstract class IndexDark extends Index
 {
   public function getContent(): string
   {
@@ -45,7 +45,7 @@ abstract class IndexDark extends WebPage
   }
 }
 
-class IndexLight extends WebPage
+class IndexLight extends Index
 {
   public function getContent(): string
   {
