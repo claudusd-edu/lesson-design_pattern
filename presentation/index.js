@@ -50,8 +50,37 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={2} fit caps lineHeight={1} textColor="secondary">
+            What ?
+          </Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={2} fit caps lineHeight={1} textColor="secondary">
+            Why ?
+          </Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={2} fit caps lineHeight={1} textColor="secondary">
             Creational
           </Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={2} fit caps lineHeight={1} textColor="secondary">
+            Problems :
+          </Heading>
+          <List>
+            <ListItem>
+              How can it be ensured that a class has only one instance?
+            </ListItem>
+            <ListItem>
+              How can the sole instance of a class be accessed easily?
+            </ListItem>
+            <ListItem>
+              How can a class control its instantiation?
+            </ListItem>
+            <ListItem>
+              How can the number of instances of a class be restricted?
+            </ListItem>
+          </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={3} fit caps lineHeight={1} textColor="secondary">
@@ -70,8 +99,26 @@ export default class Presentation extends React.Component {
             { loc: [4, 5], title: "Static property"},
             { loc: [17, 18], title: "Return"},
             { loc: [21,23] },
-            { loc: [24,25] }
+            { loc: [24,25], title: "True or False ?" }
           ]}/>
+          <Slide transition={["fade"]} bgColor="primary">
+            <Heading size={2} fit caps lineHeight={1} textColor="secondary">
+              Bad Usage :
+            </Heading>
+            <List>
+              <ListItem>Use to access easily to an class</ListItem>
+            </List>
+          </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={2} fit caps lineHeight={1} textColor="secondary">
+            Problems :
+          </Heading>
+          <List>
+            <ListItem>
+              How can provide a standard object instantiation
+            </ListItem>
+          </List>
+        </Slide>
         <Slide transition={["fade"]}
            bgColor="primary">
           <Heading size={3} fit caps lineHeight={1} textColor="secondary">
@@ -93,7 +140,30 @@ export default class Presentation extends React.Component {
             { loc: [32,37], title: "class Simple Factory" },
             { loc: [38,39], title: "Run it" },
             { loc: [40,42], title: "Run it" },
+            { loc: [43,45], title: "True or False ?" },
           ]}/>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={2} fit caps lineHeight={1} textColor="secondary">
+            Bad Usage :
+          </Heading>
+          <List>
+            <ListItem>Use to access easily to an class</ListItem>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={2} fit caps lineHeight={1} textColor="secondary">
+            Problems :
+          </Heading>
+          <List>
+            <ListItem>
+              How can an object be created so that subclasses can redefine which
+              class to instantiate?
+            </ListItem>
+            <ListItem>
+              How can a class defer instantiation to subclasses?
+            </ListItem>
+          </List>
+        </Slide>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={3} fit caps lineHeight={1} textColor="secondary">
             Factory Method
@@ -121,7 +191,28 @@ export default class Presentation extends React.Component {
             { loc: [45,49], title: "Concrete Factory 2" },
             { loc: [51,53], title: "Run it" },
             { loc: [54,56], title: "Run it" },
+            { loc: [57,58], title: "True or False ?" },
+            { loc: [59,63], title: "True or False ?" },
+            { loc: [64,66], title: "?" },
           ]}/>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={2} fit caps lineHeight={1} textColor="secondary">
+            Problems :
+          </Heading>
+          <List>
+            <ListItem>
+              How can an application be independent of how its objects are
+              created?
+            </ListItem>
+            <ListItem>
+              How can a class be independent of how the objects it requires are
+              created?
+            </ListItem>
+            <ListItem>
+              How can families of related or dependent objects be created?
+            </ListItem>
+          </List>
+        </Slide>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={3} fit caps lineHeight={1} textColor="secondary">
             Abstract Factory
@@ -150,6 +241,21 @@ export default class Presentation extends React.Component {
             { loc: [72,75], title: "Run it" },
           ]}/>
         <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={2} fit caps lineHeight={1} textColor="secondary">
+            Problems :
+          </Heading>
+          <List>
+            <ListItem>
+              How can a class (the same construction process) create different
+              representations of a complex object?
+            </ListItem>
+            <ListItem>
+              How can a class that includes creating a complex object be
+              simplified?
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
           <Heading size={3} fit caps lineHeight={1} textColor="secondary">
             Builder
           </Heading>
@@ -172,8 +278,23 @@ export default class Presentation extends React.Component {
             { loc: [50,55], title: "Builder" },
             { loc: [56,64], title: "Builder" },
             { loc: [67,68], title: "Run it" },
-            { loc: [68,69], title: "Run it" },
+            { loc: [68,70], title: "Run it" },
+            { loc: [71,72], title: "Run it" },
           ]}/>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={2} fit caps lineHeight={1} textColor="secondary">
+            Problems :
+          </Heading>
+          <List>
+            <ListItem>
+              How can objects be created so that which objects to create can be
+              specified at run-time?
+            </ListItem>
+            <ListItem>
+              How can dynamically loaded classes be instantiated?
+            </ListItem>
+          </List>
+        </Slide>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={3} fit caps lineHeight={1} textColor="secondary">
             Prototype
@@ -192,17 +313,39 @@ export default class Presentation extends React.Component {
             { loc: [21, 25], title: "Setter" },
             { loc: [26, 30], title: "Implemented method" },
             { loc: [32, 33], title: "Run it" },
-            { loc: [33, 34], title: "Run it" },
+            { loc: [33, 34], title: "?" },
             { loc: [34, 35], title: "Run it" },
-            { loc: [35, 36], title: "Run it" },
+            { loc: [35, 36], title: "?" },
             { loc: [36, 37], title: "Run it" },
-            { loc: [37, 38], title: "Run it" },
-            { loc: [38, 39], title: "Run it" },
+            { loc: [37, 38], title: "?" },
+            { loc: [38, 39], title: "?" },
+            { loc: [40, 41], title: "Run it" },
+            { loc: [41, 42], title: "?" },
+            { loc: [42, 43], title: "Run it" },
+            { loc: [43, 44], title: "?" },
+            { loc: [44, 45], title: "Run it" },
+            { loc: [45, 46], title: "?" },
+            { loc: [46, 47], title: "?" },
           ]}/>
           <Slide transition={["fade"]} bgColor="primary">
             <Heading size={2} fit caps lineHeight={1} textColor="secondary">
               Behavioral
             </Heading>
+          </Slide>
+          <Slide transition={["fade"]} bgColor="primary">
+            <Heading size={2} fit caps lineHeight={1} textColor="secondary">
+              Problems :
+            </Heading>
+            <List>
+              <ListItem>
+                Coupling the sender of a request to its receiver should be
+                avoided.
+              </ListItem>
+              <ListItem>
+                It should be possible that more than one receiver can handle a
+                request.
+              </ListItem>
+            </List>
           </Slide>
           <Slide transition={["fade"]} bgColor="primary">
             <Heading size={2} fit caps lineHeight={1} textColor="secondary">
@@ -246,6 +389,21 @@ export default class Presentation extends React.Component {
             ]}/>
           <Slide transition={["fade"]} bgColor="primary">
             <Heading size={2} fit caps lineHeight={1} textColor="secondary">
+              Problems :
+            </Heading>
+            <List>
+              <ListItem>
+                Coupling the invoker of a request to a particular request should
+                be avoided. That is, hard-wired requests should be avoided.
+              </ListItem>
+              <ListItem>
+                It should be possible to configure an object (that invokes a
+                request) with a request.
+              </ListItem>
+            </List>
+          </Slide>
+          <Slide transition={["fade"]} bgColor="primary">
+            <Heading size={2} fit caps lineHeight={1} textColor="secondary">
               Command
             </Heading>
           </Slide>
@@ -283,6 +441,21 @@ export default class Presentation extends React.Component {
             ]}/>
           <Slide transition={["fade"]} bgColor="primary">
             <Heading size={2} fit caps lineHeight={1} textColor="secondary">
+              Problems :
+            </Heading>
+            <List>
+              <ListItem>
+                The elements of an aggregate object should be accessed and
+                traversed without exposing its representation (data structures).
+              </ListItem>
+              <ListItem>
+                New traversal operations should be defined for an aggregate
+                object without changing its interface.
+              </ListItem>
+            </List>
+          </Slide>
+          <Slide transition={["fade"]} bgColor="primary">
+            <Heading size={2} fit caps lineHeight={1} textColor="secondary">
               Iterator
             </Heading>
           </Slide>
@@ -298,6 +471,21 @@ export default class Presentation extends React.Component {
               { loc: [8,9], title: "count" },
               { loc: [10,13], title: "foreach" },
             ]}/>
+          <Slide transition={["fade"]} bgColor="primary">
+            <Heading size={2} fit caps lineHeight={1} textColor="secondary">
+              Problems :
+            </Heading>
+            <List>
+              <ListItem>
+                Tight coupling between a set of interacting objects should be
+                avoided.
+              </ListItem>
+              <ListItem>
+                It should be possible to change the interaction between a set of
+                objects independently.
+              </ListItem>
+            </List>
+          </Slide>
           <Slide transition={["fade"]} bgColor="primary">
             <Heading size={2} fit caps lineHeight={1} textColor="secondary">
               Mediator
@@ -333,6 +521,20 @@ export default class Presentation extends React.Component {
             ]}/>
           <Slide transition={["fade"]} bgColor="primary">
             <Heading size={2} fit caps lineHeight={1} textColor="secondary">
+              Problems :
+            </Heading>
+            <List>
+              <ListItem>
+                The internal state of an object should be saved externally so
+                that the object can be restored to this state later.
+              </ListItem>
+              <ListItem>
+                The object's encapsulation must not be violated.
+              </ListItem>
+            </List>
+          </Slide>
+          <Slide transition={["fade"]} bgColor="primary">
+            <Heading size={2} fit caps lineHeight={1} textColor="secondary">
               Memento
             </Heading>
           </Slide>
@@ -360,6 +562,25 @@ export default class Presentation extends React.Component {
               { loc: [51,52], title: "Run it" },
               { loc: [52,53], title: "Run it" },
             ]}/>
+          <Slide transition={["fade"]} bgColor="primary">
+            <Heading size={2} fit caps lineHeight={1} textColor="secondary">
+              Problems :
+            </Heading>
+            <List>
+              <ListItem>
+                A one-to-many dependency between objects should be defined
+                without making the objects tightly coupled.
+              </ListItem>
+              <ListItem>
+                It should be ensured that when one object changes state an
+                open-ended number of dependent objects are updated automatically.
+              </ListItem>
+              <ListItem>
+                It should be possible that one object can notify an open-ended
+                number of other objects.
+              </ListItem>
+            </List>
+          </Slide>
           <Slide transition={["fade"]} bgColor="primary">
             <Heading size={2} fit caps lineHeight={1} textColor="secondary">
               Observer
@@ -391,6 +612,17 @@ export default class Presentation extends React.Component {
               { loc: [57,60], title: "Runt it" },
               { loc: [61,62], title: "Runt it" },
             ]}/>
+          <Slide transition={["fade"]} bgColor="primary">
+            <Heading size={2} fit caps lineHeight={1} textColor="secondary">
+              Problems :
+            </Heading>
+            <List>
+              <ListItem>
+                It should be possible to define a new operation for (some)
+                classes of an object structure without changing the classes.
+              </ListItem>
+            </List>
+          </Slide>
           <Slide transition={["fade"]} bgColor="primary">
             <Heading size={3} fit caps lineHeight={1} textColor="secondary">
               Visitor

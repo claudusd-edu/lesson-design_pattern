@@ -66,4 +66,14 @@ class SandwichBuilder
 }
 
 $sandwichBuilder = new SandwichBuilder();
-$sandwich = $sandwichBuilder->addSalad()->addCheese()->setMeat('chicken');
+$sandwich = $sandwichBuilder->addSalad()->addCheese()
+->setMeat('chicken');
+
+$sandwich = $sandwichBuilder->build();
+
+
+
+
+
+
+//

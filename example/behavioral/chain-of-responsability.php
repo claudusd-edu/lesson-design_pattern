@@ -31,12 +31,12 @@ abstract class Account
 
   final public function pay(float $ammount)
   {
-    if ($this->canPay($amountToPay)) {
+    if ($this->canPay($amount)) {
           echo sprintf('Paid %s using %s' . PHP_EOL, $amount, get_called_class());
           $this->doPay($amount);
       } elseif ($this->successor) {
           echo sprintf('Cannot pay using %s. Proceeding ..' . PHP_EOL, get_called_class());
-          $this->successor->pay($amountToPay);
+          $this->successor->pay($amount);
       } else {
           throw new Exception('None of the accounts have enough balance');
       }

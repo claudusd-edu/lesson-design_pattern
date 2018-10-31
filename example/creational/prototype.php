@@ -35,5 +35,13 @@ echo $sandwich->getMeat();
 $sandwich2 = $sandwich->same();
 echo $sandwich2->getMeat();
 $sandwich2->setMeat('Chicken');
-echo $sandwich === $sandwich2;
+$sandwich === $sandwich2;
+echo $sandwich->getMeat();
+
+$sandwich = new Sandwich('Ham');
+echo $sandwich->getMeat();
+$sandwich2 = clone $sandwich;
+echo $sandwich2->getMeat();
+$sandwich2->setMeat('Chicken');
+$sandwich === $sandwich2;
 echo $sandwich->getMeat();

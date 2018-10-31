@@ -1,6 +1,6 @@
 <?php
 
-class Cooking
+abstract class Cooking
 {
   final public function cook()
   {
@@ -46,3 +46,11 @@ class Sandwich extends Cooking
 
 $sandwich = new Sandwich();
 $sandwich->cook();
+
+
+
+
+
+
+//
+//

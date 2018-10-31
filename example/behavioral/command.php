@@ -9,7 +9,7 @@ class InternWaiter
 {
   public function takeOrder(Command $command)
   {
-    $command>execute();
+    $command->execute();
   }
 }
 

@@ -23,7 +23,7 @@ class Barista implements Employee
 
 abstract class OrderFactory
 {
-    abstract protected function makeEmployee(): Employee;
+    abstract public function makeEmployee(): Employee;
 
     final public function takeOrder(): Order
     {
@@ -34,7 +34,7 @@ abstract class OrderFactory
 
 class SandwichProducer extends OrderFactory
 {
-  protected function makeEmployee()
+  public function makeEmployee()
   {
     return new SandwichMaker()
   }
@@ -43,14 +43,24 @@ class SandwichProducer extends OrderFactory
 
 class CoffeeProducer extends OrderFactory
 {
-  protected function makeEmployee()
+  public function makeEmployee()
   {
     return new Barista();
   }
 }
 
 $sandwichProducer = new SandwichProducer();
-$sandwichProducer->takeOrder();
+$obj1 = $sandwichProducer->takeOrder();
 
 $coffeeProducer = new CoffeeProducer();
-$coffeeProducer->takeOrder();
+$obj2 = $coffeeProducer->takeOrder();
+
+$obj1 === $obj2;
+
+$producer1 = $sandwichProducer->makeEmployee();
+$producer2 = $coffeeProducer->makeEmployee();
+
+$producer1 === $producer2;
+
+get_class($producer1);
+get_class($producer2);

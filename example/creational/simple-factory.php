@@ -28,7 +28,7 @@ class Espresso implements Coffee
     }
 }
 
-class EspressoFactory
+class CoffeeFactory
 {
   public static function makeEspresso(): Espresso
   {
@@ -36,7 +36,10 @@ class EspressoFactory
   }
 }
 
-$espresso = ExpressoFactory::makeEspresso();
+$espresso = CoffeeFactory::makeEspresso();
 
 echo 'Origin : '.$espresso->getCoffeeOrigin();
 echo 'Water : '.$espresso->getWater();
+
+$expresso2 = CoffeeFactory::makeEspresso();
+$expresso === $expresso2;

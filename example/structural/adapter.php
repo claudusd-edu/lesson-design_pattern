@@ -28,7 +28,7 @@ $waiter = new Waiter();
 
 $restaurant->employ($waiter);
 
-class NotWaiter
+final class NotWaiter
 {
   public function carry()
   {

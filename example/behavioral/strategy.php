@@ -4,7 +4,7 @@ class Napoleon
 {
   private $stategy;
 
-  public function __construct((WarStrategy $strategy)
+  public function __construct(WarStrategy $strategy)
   {
     $this->strategy = new Offensive();
   }
@@ -48,3 +48,10 @@ echo $emperor->attack(new Enemy());
 // Waterloo
 $emperor->setStrategy(new Defensive());
 echo $emperor->attack(new Enemy());
+
+
+
+
+
+
+//
